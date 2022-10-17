@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zhaoyunxing92/dingtalk/v2/constant/policy"
+	"github.com/SyAtlantis/dingtalk/v3/constant/policy"
 )
 
 func TestNewMoveDriveSpacesFiles(t *testing.T) {

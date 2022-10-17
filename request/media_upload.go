@@ -21,8 +21,8 @@ import (
 	"os"
 	"path"
 
+	"github.com/SyAtlantis/dingtalk/v3/constant/file"
 	"github.com/pkg/errors"
-	"github.com/zhaoyunxing92/dingtalk/v2/constant/file"
 )
 
 // UploadFile 上传文件

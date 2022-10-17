@@ -17,8 +17,8 @@
 package request
 
 import (
-	"github.com/zhaoyunxing92/dingtalk/v2/constant/language"
-	"github.com/zhaoyunxing92/dingtalk/v2/constant/order"
+	"github.com/SyAtlantis/dingtalk/v3/constant/language"
+	"github.com/SyAtlantis/dingtalk/v3/constant/order"
 )
 
 type DeptDetailUserInfo struct {

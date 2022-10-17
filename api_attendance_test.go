@@ -20,11 +20,11 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/zhaoyunxing92/dingtalk/v2/constant/attendance"
-	"github.com/zhaoyunxing92/dingtalk/v2/request"
+	"github.com/SyAtlantis/dingtalk/v3/constant/attendance"
+	"github.com/SyAtlantis/dingtalk/v3/request"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zhaoyunxing92/dingtalk/v2/response"
+	"github.com/SyAtlantis/dingtalk/v3/response"
 )
 
 func TestDingTalk_GetAttendanceGroups(t *testing.T) {

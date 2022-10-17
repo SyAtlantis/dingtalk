@@ -23,10 +23,10 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/zhaoyunxing92/dingtalk/v2/constant"
-	"github.com/zhaoyunxing92/dingtalk/v2/crypto"
-	"github.com/zhaoyunxing92/dingtalk/v2/request"
-	"github.com/zhaoyunxing92/dingtalk/v2/response"
+	"github.com/SyAtlantis/dingtalk/v3/constant"
+	"github.com/SyAtlantis/dingtalk/v3/crypto"
+	"github.com/SyAtlantis/dingtalk/v3/request"
+	"github.com/SyAtlantis/dingtalk/v3/response"
 )
 
 // CreateUser 创建用户

@@ -21,8 +21,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/zhaoyunxing92/dingtalk/v2/crypto"
-	"github.com/zhaoyunxing92/dingtalk/v2/request"
+	"github.com/SyAtlantis/dingtalk/v3/crypto"
+	"github.com/SyAtlantis/dingtalk/v3/request"
 )
 
 func TestDingTalk_RegisterEvent(t *testing.T) {
