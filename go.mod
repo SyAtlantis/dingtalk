@@ -1,4 +1,4 @@
-module github.com/zhaoyunxing92/dingtalk/v2
+module github.com/SyAtlantis/dingtalk/v3
 
 go 1.15
 
