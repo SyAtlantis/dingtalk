@@ -60,3 +60,11 @@ func (ding *DingTalk) SearchAttendanceGroup(userId, groupName string) (rsp respo
 func (ding *DingTalk) CreateAttendanceGroup(res *request.CreateAttendanceGroup) (rsp response.CreateAttendanceGroup, err error) {
 	return rsp, ding.Request(http.MethodPost, constant.CreateAttendanceGroupKey, nil, res, &rsp)
 }
+
+func (ding *DingTalk) GetAttendanceColumnsKey(res *request.GetAttendanceColumnsKey) (rsp response.GetAttendanceColumnsKey, err error) {
+	return rsp, ding.Request(http.MethodPost, constant.GetAttendanceColumnsKey, nil, res, &rsp)
+}
+
+func (ding *DingTalk) GetAttendanceColumnsValue(res *request.GetAttendanceColumnsValue) (rsp response.GetAttendanceColumnsValue, err error) {
+	return rsp, ding.Request(http.MethodPost, constant.GetAttendanceColumnsValue, nil, res, &rsp)
+}

@@ -172,4 +172,7 @@ const (
 	GetAttendanceGroupDetailKey     = "/topapi/attendance/group/query"           // 获取考勤组详情
 	SearchAttendanceGroupKey        = "/topapi/attendance/group/search"          // 搜索考勤组摘要
 	CreateAttendanceGroupKey        = "/topapi/attendance/group/add"             // 创建考勤组
+
+	GetAttendanceColumnsKey   = "topapi/attendance/getattcolumns" //获取考勤报表列定义
+	GetAttendanceColumnsValue = "/topapi/attendance/getcolumnval" //获取考勤报表列值
 )
