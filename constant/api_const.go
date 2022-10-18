@@ -173,6 +173,18 @@ const (
 	SearchAttendanceGroupKey        = "/topapi/attendance/group/search"          // 搜索考勤组摘要
 	CreateAttendanceGroupKey        = "/topapi/attendance/group/add"             // 创建考勤组
 
-	GetAttendanceColumnsKey   = "topapi/attendance/getattcolumns" //获取考勤报表列定义
-	GetAttendanceColumnsValue = "/topapi/attendance/getcolumnval" //获取考勤报表列值
+	GetAttendanceColumnsKey   = "/topapi/attendance/getattcolumns" //获取考勤报表列定义
+	GetAttendanceColumnsValue = "/topapi/attendance/getcolumnval"  //获取考勤报表列值
+	GetAttendanceUpdateData   = "/topapi/attendance/getupdatedata" //获取用户考勤数据
+
+	SaveApprovalTemplate       = "/topapi/process/save"                        //创建或更新审批模板
+	GetApprovalTemplate        = "/topapi/process/get_by_name"                 //获取模板code
+	DeleteApprovalTemplate     = "/topapi/process/delete"                      //删除模板
+	InitiateApprovalProcess    = "/topapi/process/workrecord/create"           //创建实例
+	UpdateApprovalProcess      = "/topapi/process/workrecord/update"           //更新实例状态
+	BatchUpdateApprovalProcess = "/topapi/process/workrecord/batchupdate"      //批量更新实例状态
+	CreateWorkrecord           = "/topapi/process/workrecord/task/create"      //创建待办事项
+	QueryWorkrecordList        = "/topapi/process/workrecord/task/query"       //查询待办列表
+	UpdateWorkrecord           = "/topapi/process/workrecord/task/update"      //更新待办状态
+	CancelWorkrecord           = "/topapi/process/workrecord/taskgroup/cancel" //批量取消待办
 )

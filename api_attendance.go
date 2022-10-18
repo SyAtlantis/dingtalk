@@ -61,10 +61,17 @@ func (ding *DingTalk) CreateAttendanceGroup(res *request.CreateAttendanceGroup) 
 	return rsp, ding.Request(http.MethodPost, constant.CreateAttendanceGroupKey, nil, res, &rsp)
 }
 
+// GetAttendanceColumnsKey 获取考勤报表列定义
 func (ding *DingTalk) GetAttendanceColumnsKey(res *request.GetAttendanceColumnsKey) (rsp response.GetAttendanceColumnsKey, err error) {
 	return rsp, ding.Request(http.MethodPost, constant.GetAttendanceColumnsKey, nil, res, &rsp)
 }
 
+// GetAttendanceColumnsValue 获取考勤报表列值
 func (ding *DingTalk) GetAttendanceColumnsValue(res *request.GetAttendanceColumnsValue) (rsp response.GetAttendanceColumnsValue, err error) {
 	return rsp, ding.Request(http.MethodPost, constant.GetAttendanceColumnsValue, nil, res, &rsp)
+}
+
+// GetAttendanceUpdateData 获取用户考勤数据
+func (ding *DingTalk) GetAttendanceUpdateData(res *request.GetAttendanceUpdateData) (rsp response.GetAttendanceUpdateData, err error) {
+	return rsp, ding.Request(http.MethodPost, constant.GetAttendanceUpdateData, nil, res, &rsp)
 }

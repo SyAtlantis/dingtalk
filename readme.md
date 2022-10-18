@@ -200,9 +200,13 @@ client:= NewClient(1244553273, "appkey", "AppSecret", WithLevel(zap.DebugLevel))
         - [x] [批量获取考勤组摘要](https://open.dingtalk.com/document/orgapp-server/batch-query-of-simple-information-of-the-attendance-group) `client.GetAttendanceGroupMinimalism`
         - [x] [获取考勤组详情](https://open.dingtalk.com/document/orgapp-server/query-a-single-attendance-group) `client.GetAttendanceGroupDetail`
         - [x] [搜索考勤组摘要](https://open.dingtalk.com/document/orgapp-server/attendance-group-search) `client.SearchAttendanceGroup`
+    - 考勤统计
+        - [x] [获取用户考勤数据](https://open.dingtalk.com/document/orgapp-server/obtain-the-attendance-update-data) `client.GetAttendanceUpdateData` 
+        - [x] [获取考勤报表列定义](https://open.dingtalk.com/document/orgapp-server/queries-the-enterprise-attendance-report-column) `client.GetAttendanceColumnsKey`
+        - [x] [获取考勤报表列值](https://open.dingtalk.com/document/orgapp-server/queries-the-column-value-of-the-attendance-report) `client.GetAttendanceColumnsValue`
 
 * 应用管理
-    - [x] [获取应用列表](https://open.dingtalk.com/document/orgapp-server/manager-microapplications-api-permission) `client.GetMicroAppList`
+    - [x] [获取应用列表](https://open.dingtalk.com/document/orgapp-server/obtains-a-list-of-all-enterprise-applications) `client.GetMicroAppList`
     - [x] [根据应用id获取小程序](https://open.dingtalk.com/document/orgapp-server/manager-microapplications-api-permission) `client.GetMicroAppByAgentId`
     - [ ] [获取员工可见的应用列表](https://ding-doc.dingtalk.com/document#/org-dev-guide/obtains-the-list-of-applications-visible-to-an-employee)
     - [ ] [设置应用的可见范围](https://ding-doc.dingtalk.com/document#/org-dev-guide/set-the-visible-range-of-the-application)
@@ -234,3 +238,19 @@ client:= NewClient(1244553273, "appkey", "AppSecret", WithLevel(zap.DebugLevel))
     - [x] [更新事件接口](https://open.dingtalk.com/document/orgapp-server/updates-the-event-callback-interface) `client.UpdateRegisterEvent`
     - [x] [查询订阅事件](https://open.dingtalk.com/document/orgapp-server/the-query-event-callback-interface) `client.UpdateRegisterEvent`
     - [x] [删除事件回调接口](https://open.dingtalk.com/document/orgapp-server/delete-an-event-callback-interface) `client.DeleteRegisterEvent`
+
+* OA审批
+    - 官方OA审批
+      - [ ] [创建或更新审批模板](https://open.dingtalk.com/document/orgapp-server/create-an-approval-form-template) `client.CreateApprovalTemplate`
+  
+    - 自有OA审批
+      - [x] [创建或更新审批模板](https://open.dingtalk.com/document/orgapp-server/save-approval-template) `client.SaveApprovalTemplate` 
+      - [x] [获取模板code](https://open.dingtalk.com/document/orgapp-server/obtains-the-template-code-based-on-the-template-name) `client.GetApprovalTemplate` 
+      - [x] [删除模板](https://open.dingtalk.com/document/orgapp-server/delete-a-template) `client.DeleteApprovalTemplate` 
+      - [x] [创建实例](https://open.dingtalk.com/document/orgapp-server/initiate-an-approval-process-without-a-process) `client.InitiateApprovalProcess` 
+      - [x] [更新实例状态](https://open.dingtalk.com/document/orgapp-server/to-do-instance-status) `client.UpdateApprovalProcess` 
+      - [x] [批量更新实例状态](https://open.dingtalk.com/document/orgapp-server/update-the-status-of-multiple-instances-at-a-time) `client.BatchUpdateApprovalProcess` 
+      - [x] [创建待办事项](https://open.dingtalk.com/document/orgapp-server/create-a-to-do-task) `client.CreateWorkrecord` 
+      - [x] [查询待办列表](https://open.dingtalk.com/document/orgapp-server/query-a-user-s-to-do-items) `client.QueryWorkrecordList` 
+      - [x] [更新待办状态](https://open.dingtalk.com/document/orgapp-server/update-to-do-task-status) `client.UpdateWorkrecord` 
+      - [x] [批量取消待办](https://open.dingtalk.com/document/orgapp-server/cancel-multiple-tasks) `client.CancelWorkrecord` 
